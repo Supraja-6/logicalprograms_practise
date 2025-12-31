@@ -1,0 +1,16 @@
+"""1.ATM TRANSACTION VALIDATOR  -->  
+Take the initial balance.
+For each withdrawal: If the amount is a multiple of 100 and balance is enough, print SUCCESS and deduct the amount.
+Otherwise, print FAILED.
+After all withdrawals, print the final balance."""
+
+balance = int(input())
+n = int(input())
+amounts = list(map(int, input().split()))
+for amt in amounts:
+    if amt % 100 == 0 and balance >= amt:
+        print("SUCCESS")
+        balance -= amt
+    else:
+        print("FAILED")
+print(balance)
