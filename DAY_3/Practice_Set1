@@ -14,3 +14,21 @@ for amt in amounts:
     else:
         print("FAILED")
 print(balance)
+
+
+"""2.SMART ELECTRICITY BILL 
+Calculate bill using slabs
+If units > 300 → add 10% surcharge
+Print bill"""
+units = int(input("Enter units: "))
+bill = 0
+if units <= 100:
+    bill = units * 3
+elif units <= 200:
+    bill = 100 * 3 + (units - 100) * 5
+else:
+    bill = 100 * 3 + 100 * 5 + (units - 200) * 8
+if units > 300:
+    bill += bill * 0.10
+print("Total Bill:", int(bill))
+

@@ -1,5 +1,5 @@
 #STRINGS
-"""s1 = 'Supraja'
+s1 = 'Supraja'
 print(s1)
 s2 = "Supraja"
 print(s2)
@@ -80,7 +80,7 @@ print("{0:o}".format(a))
 #DECIMAL TO HEXADECIMAL
 a = 70
 print(a)
-print("{0:x}".format(a))"""
+print("{0:x}".format(a))
 
 #STRING USING FORMAT()
 import math
