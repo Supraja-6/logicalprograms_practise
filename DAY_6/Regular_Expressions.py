@@ -59,3 +59,10 @@ text = "a whole hole is not a wwhole"
 regex = r"w?hole"
 l = re.findall(regex, text)
 print(l)
+
+#META CHARACTER - + --> 1 or many
+import re
+text = "a whole hole is not a wwhole"
+regex = r"w+hole"
+l = re.findall(regex, text)
+print(l)
