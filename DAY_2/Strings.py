@@ -1,10 +1,19 @@
 #STRINGS
-s1 = 'Supraja'
+"""s1 = 'Supraja'
 print(s1)
 s2 = "Supraja"
 print(s2)
 #s3 = 'Practice makes 'Perfect''#BY escape character \'Perfect\''
 #print(s3)
+
+s1 = "Hello"
+print(s1)
+s1 + "world"
+print(s1)
+s1 = s1 + "world"
+print(s1)
+s2 = s1 + "world"
+print(s2)
 
 s = input("Enter a string: ")
 for i in range(0, len(s) - 2):
@@ -31,6 +40,10 @@ for i in s:
         s_upper += i
 print(s)
 print(s_upper)
+
+#Program to reverse the second half of the string
+s = input("Enter a String: ")
+print(s[:len(s)//2:] + s[len(s) - 1 : len(s)//2 - 1 : -1])
 
 #Built-in upper() and lower()
 s = input("Enter a String: ")
@@ -64,9 +77,25 @@ s2 = s.title()
 print(s2)
 s3 = s.capitalize()
 print(s3)
-print("python".capitalize())
+print("python".capitalize())"""
 
 #STRING FORMATTING CONVERSION
+
+s = "{0 : *>10}".format(999)
+print(s)
+s = "{0 : *<10}".format(999)
+print(s)
+s = "{0 : *^10}".format(999)
+print(s)
+
+import math
+print(math.pi)
+s = "{0 :.4f}".format(math.pi)    #fixed point notation
+print(s)
+s = "{0 : 10.4f}".format(math.pi)
+print(s)
+
+
 #DECIMAL TO BINARY
 a = 70
 print(a)
@@ -97,3 +126,7 @@ place = "Kurnool"
 print(f"{name} {place}")
 print(f"{place} {name}")
 print(f"{math.pi:.4f}")
+
+#raw string
+name = r"Ro\nhit"
+print(name)         #Ro\nhit as it is raw, in regex will be used 
